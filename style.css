@@ -858,3 +858,89 @@ h2 {
         font-size: 12px;
     }
 }
+/* =========================================================
+   MOBILE FIX — SCREEN 3 PERSONAL MESSAGE
+   Keeps the full message + button visible
+========================================================= */
+
+@media (max-width: 700px) {
+
+    #screen-3 {
+        align-items: flex-start;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    #screen-3 .screen-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #screen-3 .eyebrow {
+        margin-bottom: 14px;
+    }
+
+    #screen-3 h2 {
+        font-size: 2rem;
+        line-height: 1.05;
+        margin-bottom: 0;
+    }
+
+    #screen-3 .glass-card {
+        width: 100%;
+        margin-top: 18px;
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    #screen-3 .personal-message p {
+        font-size: 12.5px;
+        line-height: 1.48;
+    }
+
+    #screen-3 .signature {
+        margin-top: 12px;
+        font-size: 15px;
+    }
+
+    #screen-3 .main-btn {
+        margin-top: 18px;
+        min-height: 48px;
+        flex-shrink: 0;
+    }
+}
+
+
+/* ================= SMALL MOBILE SCREEN 3 ================= */
+
+@media (max-width: 380px) {
+
+    #screen-3 {
+        padding-top: 62px;
+        padding-bottom: 65px;
+    }
+
+    #screen-3 h2 {
+        font-size: 1.75rem;
+    }
+
+    #screen-3 .glass-card {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    #screen-3 .personal-message p {
+        font-size: 11.5px;
+        line-height: 1.43;
+    }
+
+    #screen-3 .signature {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    #screen-3 .main-btn {
+        margin-top: 15px;
+        min-height: 46px;
+    }
+}
