@@ -373,11 +373,23 @@ function createConfetti() {
 }
 
 
-/* ================= PREVENT SCROLL ================= */
+/* ================= PREVENT PAGE SCROLL ================= */
+
+/* Keep the main experience locked */
 
 window.addEventListener(
     "wheel",
     event => {
+
+        /* Allow scrolling only inside Screen 3 message card */
+
+        if (
+            event.target.closest(
+                "#screen-3 .personal-message"
+            )
+        ) {
+            return;
+        }
 
         event.preventDefault();
 
@@ -391,6 +403,16 @@ window.addEventListener(
 window.addEventListener(
     "touchmove",
     event => {
+
+        /* Allow touch scrolling only inside Screen 3 message card */
+
+        if (
+            event.target.closest(
+                "#screen-3 .personal-message"
+            )
+        ) {
+            return;
+        }
 
         event.preventDefault();
 
